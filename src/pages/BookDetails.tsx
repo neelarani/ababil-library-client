@@ -28,9 +28,9 @@ const BookDetails = () => {
         Book Details
       </h2>
 
-      <div className="mt-10 p-10 space-y-3 text-left border-[1px] border-purple-950 rounded bg-white/5 shadow-2xl text-white w-full justify-center  items-center flex flex-col">
+      <div className="mt-10 p-10 space-y-3   border-[1px] border-purple-950 rounded bg-white/5 shadow-2xl text-white w-full  flex flex-col">
         <p>
-          <span className="font-semibold">Title:</span> {book.title}
+          <span className="font-semibold ">Title:</span> {book.title}
         </p>
         <p>
           <span className="font-semibold">Author:</span> {book.author}
@@ -51,7 +51,7 @@ const BookDetails = () => {
           <span className="font-semibold">Available: </span>
           {book.available ? 'Yes' : 'No'}
         </p>
-        <div>
+        <div className="text-center">
           <Link
             to={`/borrow/${book._id}`}
             className="bg-purple-800 hover:bg-purple-900 text-white py-1 px-2 rounded-lg"
